@@ -12,6 +12,8 @@ var cookieParser = require('cookie-parser');
 
 var bodyParser = require('body-parser');
 
+var expressLayouts = require('express-ejs-layouts');
+
 var mysql = require('mysql');
 
 //Setup External Files
@@ -21,6 +23,7 @@ var homeRouter = require('./routes/index');
 
 
 var app = express();
+app.use(expressLayouts);
 
 
  
