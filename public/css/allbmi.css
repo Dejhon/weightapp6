@@ -1,0 +1,35 @@
+table{
+    margin: auto;
+    width: 500px;
+    margin-top: 30px;
+}
+
+th{
+    border: 1px solid pink;
+    border-radius: 8px;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    font-size: 20px;
+}
+
+td{
+    text-align: center;
+    height: 30px;
+    font-size: 19px;
+}
+
+td button{
+    background-color: palevioletred;
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+    width: 70px;
+    padding: 5px;
+    color: white;
+}
+
+td button a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
