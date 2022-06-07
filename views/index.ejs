@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/persons">Persons</a></li>
+            <li><a href="/allbmi">Get BMIs</a></li>
+            <li><a href="/aggregates">Aggregate</a></li>
+        </ul>
+    </nav>
+
+       <form action="/user" method="post" autocomplete="off">
+           <div class="container">
+                <div class="names">
+                    <div class="fnm">
+                        <input type="text" name="f_nm" placeholder="Firstname" required>
+                    </div>
+                    <div class="lnm">
+                        <input type="text" name="l_nm" placeholder="Lastname" required>
+                    </div>
+                </div>
+                <div class="bmi">
+                    <div class="weight">
+                        <input type="number" name="wt"  placeholder="Weight (lbs)" required>
+                    </div>
+                    <div class="height">
+                        <input type="number" name="ht"  placeholder="Height (ft' inches)" required>
+                    </div>
+                </div>
+                <div class="sub_btn">
+                    <input type="submit" value="ADD">
+                </div>
+           </div>
+       </form>
+    
+</body>
+</html>

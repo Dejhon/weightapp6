@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 600px;
+        }
+        th, td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/persons">Persons</a></li>
+            <li><a href="/allbmi">Get BMIs</a></li>
+            <li><a href="/aggregates">Aggregate</a></li>
+        </ul>
+    </nav>
+    
+     <table>
+         <thead>
+             <tr>
+                 <th>Firstname</th>
+                 <th>Lastname</th>
+                 <th>BMI</th>
+                 <th>Category</th>
+             </tr>
+         </thead>
+         <tbody>
+            <% data.forEach(pers => {  %> 
+             <tr>
+                 <td> <%= pers.Firstname%></td>
+                 <td> <%= pers.Lastname%></td>
+                 <td> <%= pers.BMI%></td>
+                 <td> <%= pers.Category%></td>
+             </tr>
+             <% }); %> 
+         </tbody>
+     </table>
+
+</body>
+</html>

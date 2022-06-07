@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/persons">Persons</a></li>
+            <li><a href="/allbmi">Get BMIs</a></li>
+            <li><a href="/aggregates">Aggregate</a></li>
+
+        </ul>
+    </nav>
+    
+     <table>
+         <thead>
+             <tr>
+                 <th>Firstname</th>
+                 <th>Lastname</th>
+                 <th>Weight</th>
+                 <th>Height</th>
+                 <th>Actions</th>
+             </tr>
+         </thead>
+         <tbody>
+            <% data.forEach(pers => {  %> 
+             <tr>
+                 <td> <%= pers.frst_nm%></td>
+                 <td> <%= pers.last_nm%></td>
+                 <td> <%= pers.weight%></td>
+                 <td> <%= pers.height%></td>
+                 <td>
+                     <button><a href="/bmi/<%= pers.id %>">BMI</a></button>
+                 </td>
+             </tr>
+             <% }); %> 
+         </tbody>
+     </table>
+
+</body>
+</html>
