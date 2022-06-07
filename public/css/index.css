@@ -2,6 +2,28 @@ form{
     margin: auto;
     width: 300px;
     margin-top: 100px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input[type = text], input[type=number]{
+    width: 200px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    height: 30px;
+}
+
+input[type=submit]{
+    width: 70px;
+    height: 25px;
+    border: 1px solid palevioletred;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 .container{

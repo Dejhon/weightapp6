@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+nav{
+    background-color: pink;
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap:20px;
+}
+
+nav ul li{
+    list-style: none;
+    background-color: palevioletred;
+    padding: 5px;
+    border: 1px solid palevioletred;
+    margin-top: 8px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
