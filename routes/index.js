@@ -89,7 +89,7 @@ router.get('/allbmi', (req, res)=>{
 })
 
 router.get('/aggregates', (req, res)=>{
-    let sql="SELECT sum(bmi) AS Sum,max(bmi) AS Max,avg(bmi) AS Average, min(bmi) AS Min,count(bmi) AS Total FROM weightapp6.bmi"
+    let sql="SELECT sum(bmi) AS Sum,max(bmi) AS Max, round(avg(bmi) ,2) AS Average, min(bmi) AS Min,count(bmi) AS Total FROM weightapp6.bmi"
     conn.query(sql, (err, rows)=>{
         if(err) throw err
         res.render('aggregate',{
